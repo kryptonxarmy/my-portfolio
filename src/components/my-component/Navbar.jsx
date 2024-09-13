@@ -1,12 +1,6 @@
 import React from "react";
 
-function Navbar({ refs, className }) {
-  const { mainRef, servicesRef, skillsRef, blogRef, contactRef } = refs;
-
-  const handleScrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
+function Navbar({ className }) {
   return (
     <>
       <div className={"w-screen hidden md:flex max-w-scren h-[10vh] fixed backdrop-blur-lg py-3 px-8 z-[99]"}>
@@ -18,9 +12,9 @@ function Navbar({ refs, className }) {
           </div>
           <div className="">
             <ul className="flex gap-4 font-semibold">
-              <li onClick={() => handleScrollToSection(mainRef)}>Home</li>
-              <li onClick={() => handleScrollToSection(servicesRef)}>Services</li>
-              <li onClick={() => handleScrollToSection(skillsRef)}>Skills</li>
+              <li>Home</li>
+              <li>Services</li>
+              <li>Skills</li>
               {/* <li onClick={() => handleScrollToSection(blogRef)}>Blog</li>
               <li onClick={() => handleScrollToSection(contactRef)}>Contact</li> */}
             </ul>

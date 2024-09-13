@@ -9,9 +9,9 @@ import NavDock from "@/components/my-component/NavDock";
 import GradualSpacing from "../magicui/gradual-spacing";
 import TypingAnimation from "../magicui/typing-animation";
 
-const MainSection = forwardRef((props, ref) => {
+const MainSection = () => {
   return (
-    <div ref={ref} id="main" className="px-4">
+    <div id="main" className="px-4">
       <div className="flex flex-col md:flex-row pt-[5em] min-h-screen max-w-screen">
         {/* KIRI */}
         <div className="flex md:w-1/3 order-2 md:order-1 flex-col justify-center items-start gap-4 md:gap-6">
@@ -54,6 +54,6 @@ const MainSection = forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default MainSection;

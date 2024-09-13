@@ -3,9 +3,9 @@ import { CardService } from "../my-component/Card";
 import { Camera, Code, PencilRuler } from "lucide-react";
 import { BorderBeamDemo } from "../my-component/BorderBeamDemo";
 
-const ServiceSection = forwardRef((props, ref) => {
+const ServiceSection = () => {
   return (
-    <div ref={ref} id="services">
+    <div id="services">
       <div className="flex flex-col min-h-screen max-w-screen mt-14">
         <div className="w-full flex flex-col gap-4">
           <h1 className="text-xl text-red-600 font-semibold text-center">SERVICE</h1>
@@ -24,6 +24,6 @@ const ServiceSection = forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default ServiceSection;

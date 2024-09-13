@@ -2,10 +2,10 @@ import React, { forwardRef } from "react";
 import { MyForm } from "../my-component/MyForm";
 import { Github, Linkedin, LinkedinIcon, Twitter } from "lucide-react";
 
-const GetInTouch = forwardRef((props, ref) => {
+const GetInTouch = () => {
   return (
     <>
-      <div ref={ref} id="main" className="w-full flex flex-col items-center px-4 pt-12 md:pt-[7em] bg-white text-black justify-center">
+      <div id="main" className="w-full flex flex-col items-center px-4 pt-12 md:pt-[7em] bg-white text-black justify-center">
         <h1 className="text-6xl text-center font-extrabold text-gray-800">Get In Touch</h1>
         <div className="flex md:w-[70%] border rounded-xl shadow-2xl mt-6 flex-wrap justify-between items-center ">
           <div className="w-full md:w-1/3 p-6 ">
@@ -40,6 +40,6 @@ const GetInTouch = forwardRef((props, ref) => {
       </div>
     </>
   );
-});
+};
 
 export default GetInTouch;

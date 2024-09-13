@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { VelocityScroll } from "../magicui/scroll-based-velocity";
 import { MyToolTip } from "../my-component/MyTooltip";
 
-const TechStack = forwardRef((props, ref) => {
+const TechStack = () => {
   const Icons = {
     react: ({ className }) => {
       return (
@@ -70,7 +70,7 @@ const TechStack = forwardRef((props, ref) => {
   };
 
   return (
-    <div ref={ref} id="skills">
+    <div id="skills">
       <div className="w-full flex flex-col h-screen mt-24 relative overflow-hidden">
         <h1 className="text-3xl md:text-6xl text-white font-bold text-center">What I'm Good At</h1>
         <div className="absolute w-[60vw] rounded-2xl bg-red-300/10 backdrop-blur-sm h-[70vh] flex justify-center items-center left-[48%] -translate-x-1/2 top-[8%] md:top-[18%] bottom-0 z-[30]">
@@ -146,6 +146,6 @@ const TechStack = forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default TechStack;
