@@ -21,8 +21,8 @@ function Navbar({ refs, className }) {
               <li onClick={() => handleScrollToSection(mainRef)}>Home</li>
               <li onClick={() => handleScrollToSection(servicesRef)}>Services</li>
               <li onClick={() => handleScrollToSection(skillsRef)}>Skills</li>
-              <li onClick={() => handleScrollToSection(blogRef)}>Blog</li>
-              <li onClick={() => handleScrollToSection(contactRef)}>Contact</li>
+              {/* <li onClick={() => handleScrollToSection(blogRef)}>Blog</li>
+              <li onClick={() => handleScrollToSection(contactRef)}>Contact</li> */}
             </ul>
           </div>
         </div>
