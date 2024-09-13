@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <div className="bg-black text-white">
         <Particles className="absolute inset-0" quantity={200} ease={80} color={"#ffffff"} refresh />
-        <Navbar refs={{ mainRef, servicesRef, skillsRef, quoteRef, githubRef, getInTouchRef }} className={'hidden md:flex'} />
+        <Navbar refs={{ mainRef, servicesRef, skillsRef, quoteRef, githubRef, getInTouchRef }} className={"hidden md:flex"} />
         <div className="flex flex-col mx-8">
           <MainSection ref={mainRef} />
           <ServiceSection ref={servicesRef} />
